@@ -35,7 +35,7 @@ def health():
 @app.route('/api/v1/hello')
 # ‘/’ URL is bound with hello_world() function.
 def hello():
-    return "Hello, thi is the test message, pre-build :-) Hellooow..."
+    return "Con mi burrito Sabaneroooo voy camino a Beleen :-)"
 
 
 
