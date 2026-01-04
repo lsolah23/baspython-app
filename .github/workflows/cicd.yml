@@ -49,7 +49,7 @@ jobs:
             --insecure \
             --grpc-web \
             --username admin \
-            --password o4hZ5zX8zjDNKVPP
+            --password ${{ secrets.ARGOCD_PASSWORD }}
           argocd app sync python-web-app
 
           
