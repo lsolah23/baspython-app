@@ -35,7 +35,7 @@ def health():
 @app.route('/api/v1/hello')
 # ‘/’ URL is bound with hello_world() function.
 def hello():
-    return " Nicolas Maduro pledeged not guilty before the judge  !--> Cambio definitivo nuevo deployment con ARGOCD !!!!"
+    return " Cambio definitivo nuevo deployment con ARGOCD !!!!"
 
 
 
