@@ -2,7 +2,7 @@ replicaCount: 3
 image:
   repository: leosol70/python-app
   pullPolicy: IfNotPresent
-  tag: b70665
+  tag: 5f67ad
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
