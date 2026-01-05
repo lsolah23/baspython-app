@@ -45,8 +45,9 @@ jobs:
         shell: bash
         run: |
           echo ${{ needs.ci.outputs.commit_id }}
-          sudo apt-get update
-          sudo apt-get install -y yq
+          sudo curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 \
+          -o /usr/local/bin/yq \
+          sudo chmod +x /usr/local/bin/yq
           yq -Yi '.image.tag = "${{ needs.ci.outputs.commit_id }}"' helm-chatrs/python-web/values.yaml
           
       - name: Commit changes

@@ -35,7 +35,7 @@ def health():
 @app.route('/api/v1/hello')
 # ‘/’ URL is bound with hello_world() function.
 def hello():
-    return " Hellow ---- Cambio definitivo NEW deployment con ARGOCD !!!!"
+    return " Hellow ---- Un nuevo CAMBIO definitivo sudo curl para instalar yq!!"
 
 
 
