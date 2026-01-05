@@ -15,13 +15,14 @@ app = Flask(__name__)
 # The route() function of the Flask class is a decorator, 
 # which tells the application which URL should call 
 # the associated function.
-@app.route('/api/v1/details')
+@app.route('/api/v1/info')
 # ‘/’ URL is bound with hello_world() function.
-def details():
+def info():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
         'hostname': socket.gethostname(),
-        'message': 'You are doing great, Leo boy!'
+        'message': 'You are doing great, Leo boy!',
+        'deployed_on': 'Kubernetes'
     })
 
 
